@@ -1,5 +1,5 @@
 Name: linux_compat
-Version: 0.1
+Version: 0.1.0
 Release: 1
 Summary: support for some Linux functions in AIX
 License: BSD
@@ -19,13 +19,13 @@ support for some Linux functions in AIX
 rm -rf %{buildroot}
 
 %build
-make
+gmake
 
 %install
 mkdir -p %{buildroot}
 mkdir -p %{buildroot}/usr/lib
 mkdir -p %{buildroot}/usr/include
-make install DESTDIR=%{buildroot}
+gmake install DESTDIR=%{buildroot}
 
 %files
 %defattr(0644,root,root)
@@ -34,5 +34,9 @@ make install DESTDIR=%{buildroot}
 /usr/include/linux_compat.h
 
 %changelog
+* Fri Jul 17 2020 info@power-devops.com
+- Correct version (0.1.0)
+- we need gmake to build it
+
 * Thu Jul 16 2020 info@power-devops.com
 - initial release
