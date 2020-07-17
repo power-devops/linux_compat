@@ -3,7 +3,7 @@
 
 #include <time.h>
 
-int futimes(int, struct timespec *);
+int futimes(int, struct timeval *);
 time_t timegm(struct tm *);
 char *getprogname();
 
