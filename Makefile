@@ -3,9 +3,9 @@ recompile64 : CFLAGS=-O -maix64
 
 CC=gcc
 
-OBJS=src/err.o src/futimes.o src/getopt_long.o src/getprogname.o src/timegm.o
-OBJS32=lib32/err.o lib32/futimes.o lib32/getopt_long.o lib32/getprogname.o lib32/timegm.o
-OBJS64=lib64/err.o lib64/futimes.o lib64/getopt_long.o lib64/getprogname.o lib64/timegm.o
+OBJS=src/err.o src/futimes.o src/getopt_long.o src/getprogname.o src/timegm.o src/vasprintf.o src/asprintf.o
+OBJS32=lib32/err.o lib32/futimes.o lib32/getopt_long.o lib32/getprogname.o lib32/timegm.o lib32/vasprintf.o lib32/asprintf.o
+OBJS64=lib64/err.o lib64/futimes.o lib64/getopt_long.o lib64/getprogname.o lib64/timegm.o lib64/vasprintf.o lib64/asprintf.o
 
 all: liblinux_compat.a
 
