@@ -10,3 +10,7 @@ a little bit easier.
 ## futimes
 
 ## timegm
+
+## vasprintf
+
+## asprintf
