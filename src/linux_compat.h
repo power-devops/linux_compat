@@ -3,6 +3,7 @@
 
 #include <sys/time.h>
 #include <time.h>
+#include <stdarg.h>
 
 /*
  * Structure initializations for 'fake' FILE objects.
