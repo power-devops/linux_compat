@@ -12,6 +12,10 @@
 	._file = -1,				\
 }
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+
 int futimes(int, struct timeval *);
 time_t timegm(struct tm *);
 char *getprogname();
@@ -19,5 +23,11 @@ char *getprogname();
 int sethostname(char *, int);
 int vasprintf(char **, const char *, va_list);
 int asprintf(char ** __restrict, char const * __restrict, ...);
+int pthread_getthreadid_np(void);
+
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif

@@ -14,3 +14,5 @@ a little bit easier.
 ## vasprintf
 
 ## asprintf
+
+## pthread_getthreadid_np
